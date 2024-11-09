@@ -6,7 +6,7 @@ plugins {
 }
 
 group = 'io.typst'
-version = '5.0.2'
+version = '5.0.3'
 
 repositories {
     mavenLocal()
@@ -17,7 +17,7 @@ dependencies {
     api 'io.typst:command-bukkit:2.1.1'
     api 'io.typst:command-kotlin:2.1.1'
     api 'io.typst:bukkit-object:1.0.0'
-    api 'io.typst:bukkit-view-core:7.0.4'
+    api 'io.typst:bukkit-view-core:7.1.1'
     api 'io.typst:bukkit-kotlin-serialization:3.0.0'
     api 'io.typst:bukkit-inventory-kotlin:1.0.0'
     api 'io.arrow-kt:arrow-core:1.2.1'
