@@ -1,12 +1,12 @@
 plugins {
     id 'org.jetbrains.kotlin.jvm' version '1.9.22'
-    id 'kr.entree.spigradle' version '2.4.3'
+    id 'kr.entree.spigradle' version '2.4.4'
     id 'com.github.johnrengelman.shadow' version '8.1.1'
     id 'maven-publish'
 }
 
 group = 'io.typst'
-version = '5.0.3'
+version = '5.1.0'
 
 repositories {
     mavenLocal()
@@ -17,7 +17,7 @@ dependencies {
     api 'io.typst:command-bukkit:2.1.1'
     api 'io.typst:command-kotlin:2.1.1'
     api 'io.typst:bukkit-object:1.0.0'
-    api 'io.typst:bukkit-view-core:7.1.1'
+    api 'io.typst:bukkit-view-core:7.2.0'
     api 'io.typst:bukkit-kotlin-serialization:3.0.0'
     api 'io.typst:bukkit-inventory-kotlin:1.0.0'
     api 'io.arrow-kt:arrow-core:1.2.1'
@@ -34,15 +34,15 @@ test {
 }
 
 java {
-    toolchain.setLanguageVersion(JavaLanguageVersion.of(8))
+    toolchain.setLanguageVersion(JavaLanguageVersion.of(17))
 }
 
 compileKotlin {
-    kotlinOptions.jvmTarget = '1.8'
+    kotlinOptions.jvmTarget = '17'
 }
 
 compileTestKotlin {
-    kotlinOptions.jvmTarget = '1.8'
+    kotlinOptions.jvmTarget = '17'
 }
 
 assemble.dependsOn(shadowJar)
@@ -59,7 +59,6 @@ publishing {
             groupId = rootProject.group
             artifactId = rootProject.name
             version = rootProject.version
-
             from components.java
         }
     }
