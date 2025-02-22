@@ -6,7 +6,7 @@ plugins {
 }
 
 group = 'io.typst'
-version = '5.1.0'
+version = '5.0.9'
 
 repositories {
     mavenLocal()
