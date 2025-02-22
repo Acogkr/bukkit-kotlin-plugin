@@ -1,4 +1,10 @@
-# bukkit-kotlin-plugin
+# bukkit-kotlin-plugin 
+## bogle-rpg server library plugin 
+
+```angular2html
+bukkit-view-core : 7.1.9
+paper : 1.20.1
+```
 
 ## Common issues
 
